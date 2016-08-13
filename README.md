@@ -2,7 +2,7 @@
 
 Right-to-left friendly graph database queries
 
-In English
+In English:
 
 ```
 MATCH (a:Person)

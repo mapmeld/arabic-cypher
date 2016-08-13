@@ -1,0 +1,2 @@
+- Syntax highlighting (?) of Cypher
+- Submit query to input Neo4j URL and return JSON

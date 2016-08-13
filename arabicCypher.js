@@ -13,10 +13,14 @@ var keywords = [
   ['،', ',']
 ];
 
-module.exports = function (arabicCypher) {
+function arabicCypher (cypherTxt) {
   for (var a = 0; a < keywords.length; a++) {
     var repr = new RegExp(keywords[a][0], 'g');
-    arabicCypher = arabicCypher.replace(repr, keywords[a][1]);
+    cypherTxt = cypherTxt.replace(repr, keywords[a][1]);
   }
-  return arabicCypher;
+  return cypherTxt;
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = arabicCypher;
 }

@@ -4,6 +4,17 @@
     <meta charset="utf-8"/>
     <title>Test Page</title>
     <style>
+body {
+  font-family: sans-serif;
+}
+label, input, textarea, button {
+  display: block;
+  font-size: 14pt;
+  line-height: 16pt;
+}
+input[dir='ltr'] {
+  width: 40%;
+}
 textarea {
   font-size: 16pt;
   line-height: 18pt;
@@ -11,10 +22,35 @@ textarea {
     </style>
   </head>
   <body dir="rtl">
+    <h3>Arabic Cypher Queries</h3>
+    <label>Neo4j Endpoint</label>
+    <input type="text" dir="ltr" placeholder="http://neo4j:neo4j@localhost:7474"/>
+    <br/>
+    <label>Query</label>
     <textarea rows="10" cols="50">
 ووو (ا:دد)
 ووو ا -{خ:ثثث}> (ث:زز)
 ععع ا، خ، ث
     </textarea>
+    <br/>
+    <button>Run</button>
+    <pre></pre>
+    <script src="./lib/jquery-1.11.3.min.js"></script>
+    <script src="./arabicCypher.js"></script>
+    <script>
+$('button').click(function() {
+  var endpoint = $('input').val() || 'http://neo4j:neo4j@localhost:7474';
+
+  var query = arabicCypher($('textarea').val());
+  $.get(endpoint, { query: query }, function (data) {
+    console.log('DATA???');
+    console.log(data);
+    $('pre').text(data);
+  }, function (err) {
+    console.log('ERROR');
+    console.log(err);
+  });
+});
+    </script>
   </body>
 </html>

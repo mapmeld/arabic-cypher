@@ -1,0 +1,19 @@
+{
+  "name": "arabic-cypher",
+  "version": "1.0.0",
+  "description": "Write Neo4j/Cypher queries in Arabic script",
+  "main": "arabicCypher.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapmeld/arabic-cypher.git"
+  },
+  "author": "Nick Doiron <ndoiron@mapmeld.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mapmeld/arabic-cypher/issues"
+  },
+  "homepage": "https://github.com/mapmeld/arabic-cypher#readme"
+}
