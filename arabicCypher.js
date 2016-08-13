@@ -2,8 +2,8 @@
 
 var keywords = [
   // translated keywords
-  ['MATCH', ''],
-  ['REPLACE', ''],
+  ['MATCH', 'تجد'],
+  ['RETURN', 'الرد مع'],
 
   // square brackets not readily available on Arabic keyboard
   ['{', '['],

@@ -12,17 +12,17 @@ RETURN a, b, c
 
 In Arabic:
 
-<code dir="rtl">
-ووو (ا:دد)
-</code>
+<div dir="rtl">
+تجد (ا:دد)
+</div>
 
-<code dir="rtl">
-ووو ا -{خ:ثثث}> (ث:زز)
-</code>
+<div dir="rtl">
+تجد ا -{خ:ثثث}> (ث:زز)
+</div>
 
-<code dir="rtl">
-ععع ا، خ، ث
-</code>
+<div dir="rtl">
+الرد مع ا، خ، ث
+</div>
 
 ### Usage
 
