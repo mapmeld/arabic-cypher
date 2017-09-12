@@ -1,5 +1,7 @@
 # arabic-cypher
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mapmeld/arabic-cypher.svg)](https://greenkeeper.io/)
+
 Right-to-left friendly graph database queries
 
 In English:
